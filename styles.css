@@ -30,7 +30,6 @@ body {
     max-width: 900px;
     margin: 40px 0;
     border-top: 1px dashed #52bdf0;
-    /* Changed to dashed */
     padding-top: 20px;
 }
 
@@ -39,7 +38,6 @@ body {
     height: auto;
     margin-right: 20px;
     object-fit: cover;
-    /* filter: grayscale(100%) contrast(1.2) brightness(0.8); */
 }
 
 .content {
@@ -60,9 +58,26 @@ body {
 
 .podcast-image {
     width: 100% !important;
-    /* Forces the image to fill the width */
     height: auto !important;
-    /* Maintains the aspect ratio */
     display: block !important;
-    /* Removes any inline spacing */
+}
+
+.special-section {
+    display: flex;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 40px 0;
+    border-top: 1px dashed #52bdf0;
+    padding-top: 20px;
+}
+
+.special-section img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+    display: block;
+}
+
+.special-section .content {
+    flex: 1;
 }
